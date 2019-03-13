@@ -4,6 +4,7 @@ import App from './App';
 
 import './index.css';
 import './css/page.css';
+import './css/about.css';
 import './css/navbar.css';
 import './css/project.css';
 

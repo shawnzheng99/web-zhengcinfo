@@ -16,7 +16,7 @@ class Project extends Component{
                     <Cover />
                     <Cover />
                     <Cover />
-                </CardDeck>
+                </ CardDeck>
                 
             </div>
         )

@@ -6,6 +6,7 @@ const sampleImg = [{ original: 'https://s3-us-west-2.amazonaws.com/zhengcinfo-we
 { original: 'https://s3-us-west-2.amazonaws.com/zhengcinfo-web/assets/landing-gallery/cyp2.jpeg' },
 { original: 'https://s3-us-west-2.amazonaws.com/zhengcinfo-web/assets/landing-gallery/cyp3.jpeg' }
 ]
+const resumeUrl = 'https://s3-us-west-2.amazonaws.com/zhengcinfo-web/assets/resumeChongyangZheng19.pdf';
 
 class Home extends Component {
     render() {
@@ -19,6 +20,7 @@ class Home extends Component {
                     showNav={false}
                 />
                 <Textbox className='text-desc' />
+
             </div>
         );
     }

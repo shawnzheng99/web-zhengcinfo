@@ -2,6 +2,9 @@
     width: 100%;
     text-align: center;
 }
+.tag-filter ul{
+    padding-left: 0px;
+}
 .tag-filter li{
     display: inline-block;
     margin: 0px 2px 0px 2px;
