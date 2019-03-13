@@ -1,31 +1,28 @@
 import React, { Component } from 'react';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Navbar from './Navbar';
-import ImageGallery from 'react-image-gallery';
-import Textbox from './Textbox';
 import Footer from './Footer';
+import Project from './Project';
+import Home from './Home';
+import About from './About';
+import Error from './Error';
 
-const sampleImg = [{original:'https://s3-us-west-2.amazonaws.com/zhengcinfo-web/assets/landing-gallery/cyp1.jpeg'},
-                   {original: 'https://s3-us-west-2.amazonaws.com/zhengcinfo-web/assets/landing-gallery/cyp2.jpeg'},
-                   {original: 'https://s3-us-west-2.amazonaws.com/zhengcinfo-web/assets/landing-gallery/cyp3.jpeg'}
-                ]
-
-class Page extends Component{
+class Page extends Component {
     render() {
-        return(
-            <div>
-                <Navbar />
-                <div className='container'>
-                    <ImageGallery className='gallery' items={sampleImg} 
-                                  showThumbnails={false} 
-                                  showFullscreenButton={false}
-                                  showPlayButton={false}
-                                  autoPlay={true}
-                                  showNav={false}
-                                  />
-                    <Textbox className='text-desc' />
+        return (            
+            <BrowserRouter>
+                <div>
+                    <Navbar />
+                    <Switch>
+                        <Route path="/" exact strict component={Home} />
+                        <Route path='/proj' exact strict component={Project} />
+                        <Route path='/about' exact strict component={About} />
+                        <Route component={Error} />
+                    </Switch>
+                    <Footer />
                 </div>
-                <Footer />
-            </div>
+            </ BrowserRouter>
+
         );
     }
 }
