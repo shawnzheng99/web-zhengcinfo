@@ -34,3 +34,8 @@
     vertical-align: middle;
     margin-right: 1rem;
 }
+
+.nav-bar a {
+    color: #37484F;
+    text-decoration: none;
+}
