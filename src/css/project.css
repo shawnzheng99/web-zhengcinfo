@@ -1,0 +1,28 @@
+.tag-filter{
+    width: 100%;
+    text-align: center;
+}
+.tag-filter li{
+    display: inline-block;
+    margin: 0px 2px 0px 2px;
+}
+.li-div{
+    display: inline;
+}
+.cover{
+    width: 250px;
+    border: 1px solid grey;
+    border-radius: 5px; 
+    display: inline-flex;
+    margin: 25px;
+    
+}
+.cover-img{
+    border-radius: 5px;
+}
+.cover-inside{
+    padding: 1px;
+}
+.center{
+    text-align: center;
+}

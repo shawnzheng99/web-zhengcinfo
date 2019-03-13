@@ -1,12 +1,23 @@
 import React, { Component } from 'react';
 import TagFilter from './proj/TagFilter';
+import Cover from './proj/Cover';
+import { CardDeck } from 'reactstrap';
+
+const tags = ['JavaScript', 'Python', 'HTML', 'WeChat'];
+
 
 class Project extends Component{
     render(){
         return(
             <div className='container'>
-                <h1>This is Project page.</h1>
-                <TagFilter />
+                <TagFilter tags={tags} />
+                <CardDeck className='center'>
+                    <Cover />
+                    <Cover />
+                    <Cover />
+                    <Cover />
+                </CardDeck>
+                
             </div>
         )
     }

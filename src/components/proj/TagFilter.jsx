@@ -1,19 +1,24 @@
 import React, { Component } from 'react';
 
 
-class About extends Component{
+class TagFilter extends Component{
     render(){
+        let tags = this.props.tags;
+        let tagLst = tags.map((tag,idx) =>
+            <div className='li-div'>
+                <li>{tag}</li>  
+                <li>{idx}</li> 
+            </div>
+            
+        );
         return(
-            <div >
+            <div className='tag-filter'>
                 <ul>
-                    <li>JavaScript</li>
-                    <li>Python</li>
-                    <li>HTML</li>
-                    <li>WeChat</li>
-                </ul>
+                    {tagLst}
+                </ul>    
             </div>
         )
     }
 }
 
-export default About;
+export default TagFilter;
