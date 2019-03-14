@@ -8,8 +8,7 @@ class TagFilter extends Component{
             <div className='li-div' key={idx/2}>
                 <li key={idx.toString()}>{tag}</li>  
                 <li key={tag}>|</li> 
-            </div>
-            
+            </div>    
         );
         return(
             <div className='tag-filter'>

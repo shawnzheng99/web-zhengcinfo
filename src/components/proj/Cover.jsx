@@ -6,20 +6,21 @@ import {
 
 class Cover extends Component {
     render() {
+        let project = this.props.proj;
+        let tag = project.tag.map(e => <small className="text-muted">{e} &nbsp; </small>);
+        let linkName = project.name.replace(' ','+')
         return (
             <div className='cover'>
                 <Card>
                     <div className='cover-inside'>
                     {/* imgsize: 318*180 */}
-                    <CardImg className='cover-img' top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Proj ScreenShot" />
+                    <CardImg className='cover-img' top width="100%" src={project.img + linkName + '.jpeg'} alt="Proj ScreenShot" />
                     <CardBody>
-                        <CardTitle>BeneHome</CardTitle>
-                        <CardSubtitle>May, 2018</CardSubtitle>
-                        <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-
-                            <small className="text-muted">Java</small>
-                            <small className="text-muted">Java</small>
-
+                        <CardTitle>{project.name}</CardTitle>
+                        <CardSubtitle>{project.date}</CardSubtitle>
+                        <CardText>{project.desc}</CardText>
+                        
+                        <div>{tag}</div>
                     </CardBody>
                     </div>
                 </Card>

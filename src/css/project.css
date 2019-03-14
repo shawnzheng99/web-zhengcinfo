@@ -1,31 +1,44 @@
-.tag-filter{
+.tag-filter {
     width: 100%;
     text-align: center;
 }
-.tag-filter ul{
+
+.tag-filter ul {
     padding-left: 0px;
 }
-.tag-filter li{
+
+.tag-filter li {
     display: inline-block;
     margin: 0px 2px 0px 2px;
 }
-.li-div{
+
+.li-div {
     display: inline;
 }
-.cover{
+
+.cover {
     width: 250px;
     border: 1px solid grey;
-    border-radius: 5px; 
+    border-radius: 5px;
     display: inline-flex;
     margin: 25px;
-    
+
 }
-.cover-img{
+
+.cover-img {
     border-radius: 5px;
 }
-.cover-inside{
+
+.cover-inside {
     padding: 1px;
 }
-.center{
+
+.center {
     text-align: center;
+}
+
+.center a {
+
+    color: #37484F;
+    text-decoration: none;
 }
