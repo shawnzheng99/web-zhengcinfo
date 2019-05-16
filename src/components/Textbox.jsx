@@ -3,13 +3,12 @@ import React from 'react';
 function Textbox() {
   return (
     <p className='text-box'>
-        Hello. This is Shawn Zheng.
+        Hello world. This is Shawn Zheng. I graduated from the Computer Systems Technonlogy program
+        at British Columbia Institute of Technology. I enjoy writing code and working with team.
+        During past two years of my study programming, I did a few simple projects, you can check it 
+        on the <a href='./proj'>_Project</a> page.
         
-Every age cautions with the fold brick. The appraisal messes with a character throughout the reckless paranoid. The cyclist finishes under the stopped criterion. A chest cruises! Within another wrapper pulses the collar.
 
-Every age cautions with the fold brick. The appraisal messes with a character throughout the reckless paranoid. The cyclist finishes under the stopped criterion. A chest cruises! Within another wrapper pulses the collar.
-
-Every age cautions with the fold brick. The appraisal messes with a character throughout the reckless paranoid. The cyclist finishes under the stopped criterion. A chest cruises! Within another wrapper pulses the collar.
     </p>
   );
 }

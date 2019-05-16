@@ -4,7 +4,8 @@ import Textbox from './Textbox';
 
 const sampleImg = [{ original: 'https://s3-us-west-2.amazonaws.com/zhengcinfo-web/assets/landing-gallery/cyp1.jpeg' },
 { original: 'https://s3-us-west-2.amazonaws.com/zhengcinfo-web/assets/landing-gallery/cyp2.jpeg' },
-{ original: 'https://s3-us-west-2.amazonaws.com/zhengcinfo-web/assets/landing-gallery/cyp3.jpeg' }
+{ original: 'https://s3-us-west-2.amazonaws.com/zhengcinfo-web/assets/landing-gallery/cyp3.jpeg' },
+{original: 'https://s3-us-west-2.amazonaws.com/zhengcinfo-web/assets/landing-gallery/bridge1.jpeg'}
 ]
 
 class Home extends Component {
