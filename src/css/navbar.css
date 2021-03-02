@@ -10,8 +10,9 @@
 }
 .name-brand {
     font-family: Bangla MN;
-    align-content: center;
+    margin-top: 1rem;
     display: inline-block;
+    
 }
 
 .nav-container {
