@@ -46,7 +46,6 @@ class Project extends Component{
 
     render(){
         const { projects, tags } = this.state;
-        let oneProj = projects.map(proj => <a href={proj.link}><Cover proj={proj} /></a>);
 
         return(
             <div className='container'>
@@ -54,7 +53,7 @@ class Project extends Component{
                     {tags.map((t, i) => this.renderEachTag(t, i))}
                 </div>
                 <CardDeck className='center'>
-                    {oneProj}
+                    {projects.map((proj, i) => <a key={'Proj' + i} href={proj.link}><Cover key={'Cov' + i} proj={proj} /></a>)}
                 </ CardDeck>
                 
             </div>

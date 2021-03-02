@@ -7,7 +7,7 @@ import {
 class Cover extends Component {
     render() {
         let project = this.props.proj;
-        let tag = project.tag.map(e => <small className="text-muted">{e} &nbsp; </small>);
+        let tag = project.tag.map((e, i) => <small key={'st' + i} className="text-muted">{e} &nbsp; </small>);
         let linkName = project.name.replace(' ','+')
         return (
             <div className='cover'>
