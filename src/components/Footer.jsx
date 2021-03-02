@@ -27,7 +27,7 @@ class Footer extends Component{
                 </a>
                 </p>
                 <p className='col1of4'>
-                    <a href='https://www.instagram.com/daye.zheng/' rel="noopener">
+                    <a href='https://www.instagram.com/_daye.zheng/' rel="noopener" >
                         <FaInstagram />
                     </a>
                 </p>

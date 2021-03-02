@@ -7,6 +7,7 @@
     top: 0;
     z-index: 1;
     margin-top:0px;
+    margin-bottom: 1rem;
 }
 .name-brand {
     font-family: Bangla MN;
@@ -23,6 +24,7 @@
     height: 100%;
     align-items: center;
     align-content: right;
+
 }
 
 .nav-bar ul {
