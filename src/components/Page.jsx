@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Navbar from './Navbar';
-import Footer from './Footer';
 import Project from './Project';
 import Home from './Home';
 import About from './About';
