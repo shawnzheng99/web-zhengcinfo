@@ -19,7 +19,7 @@ class Page extends Component {
                         <Route path='/about' exact strict component={About} />
                         <Route component={Error} />
                     </Switch>
-                    <Footer />
+                    {/* <Footer /> */}
                 </div>
             </ BrowserRouter>
 

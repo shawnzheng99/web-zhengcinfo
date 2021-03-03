@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Footer from './Footer';
 import TextBox from './Textbox';
 
 //
@@ -7,8 +8,15 @@ class About extends Component{
         return(
             <div className='container'>
                 <div className='center'>
-                <img className='avatar-xl' src='https://s3-us-west-2.amazonaws.com/zhengcinfo-web/assets/avatar/avatar.jpg' alt='avatar-xl' />
+                    <img 
+                        className='avatar-xl' 
+                        src={require('../assets/avatar/avatar.jpg')}
+                        alt='avatar-xl' 
+                        style={{marginBottom: 20}}
+                    />
+                    <Footer />
                 </div>
+                <div style={{marginBottom: 20}} />
                 <TextBox />
                 {/* Skills: JS, HTML, Py, CSS, AWS, contact me */}
             </div>

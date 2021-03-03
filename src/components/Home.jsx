@@ -3,10 +3,10 @@ import React, { Component } from 'react';
 import ImageGallery from 'react-image-gallery';
 import Textbox from './Textbox';
 
-const sampleImg = [{ original: 'https://s3-us-west-2.amazonaws.com/zhengcinfo-web/assets/landing-gallery/cyp1.jpeg' },
-{ original: 'https://s3-us-west-2.amazonaws.com/zhengcinfo-web/assets/landing-gallery/cyp2.jpeg' },
-{ original: 'https://s3-us-west-2.amazonaws.com/zhengcinfo-web/assets/landing-gallery/cyp3.jpeg' },
-{original: 'https://s3-us-west-2.amazonaws.com/zhengcinfo-web/assets/landing-gallery/bridge1.jpeg'}
+const sampleImg = [{ original: require('../assets/landing-gallery/cyp1.jpeg') },
+{ original: require('../assets/landing-gallery/cyp2.jpeg') },
+{ original: require('../assets/landing-gallery/cyp3.jpeg') },
+{original: require('../assets/landing-gallery/bridge1.jpeg')}
 ]
 
 const UNSPLASH_ACCESS_KEY = '2qJDIZBBeXJ4AVis1jnP9Dp4sUuXrVh3wHEuVPrIn_c'
@@ -54,7 +54,7 @@ class Home extends Component {
                     showNav={false}
                     slideInterval={5000}
                 />
-                
+                <div style={{marginBottom: 20}} />
                 <Textbox className='text-desc' style={{marginTop: '10'}} />
             </div>
         );

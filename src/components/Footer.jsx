@@ -12,7 +12,7 @@ class Footer extends Component{
         <IconContext.Provider value={{ color:'#172b4c', size:'1.5em'}}>
             <div className='footer'>
                 <p className='col1of4'>
-                    <a href='https://www.zhengclab.com/' rel="noopener">
+                    <a href='https://unsplash.com/@murph_zheng' rel="noopener">
                         <IoIosAperture />
                     </a>
                 </p>
